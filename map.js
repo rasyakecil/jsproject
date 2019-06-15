@@ -82,7 +82,7 @@ function loadtoc(json) {
             var pll = '';
             if ("category" in entry) {
                for (var k = 0; k < entry.category.length; k++) {
-                  pll += '<a href="javascript:filterPosts(\'' + entry.category[k].term + '\');" title="Click here to select all posts with label \'' + entry.category[k].term + '\'">' + entry.category[k].term + '</a>,  ';
+                  pll += '<a href="javascript:filterPosts(\'' + entry.category[k].term + '\');" title="Klik untuk menampilkan semua postingan dengan kategori \'' + entry.category[k].term + '\'">' + entry.category[k].term + '</a>,  ';
                }
             var l = pll.lastIndexOf(',');
             if (l != -1) { pll = pll.substring(0,l); }
@@ -172,9 +172,9 @@ function displayToc(filter) {
    var numDisplayed = 0;
    var tocTable = '';
    var tocHead1 = 'JUDUL';
-   var tocTool1 = 'Click to sort by title';
+   var tocTool1 = 'Klik untuk mengurutkan sesuai judul';
    var tocHead2 = 'TANGGAL';
-   var tocTool2 = 'Click to sort by date';
+   var tocTool2 = 'Klik untuk mengurutkan sesuai tanggal';
    var tocHead3 = 'KATEGORI';
    var tocTool3 = '';
    if (sortBy == "titleasc") { 
@@ -194,7 +194,7 @@ function displayToc(filter) {
       tocTool2 += ' (oldest first)';
    }
    if (postFilter != '') {
-      tocTool3 = 'Click to show all posts';
+      tocTool3 = 'Klik untuk menampilkan semua postingan';
    }
    tocTable += '<table>';
    tocTable += '<tr>';
