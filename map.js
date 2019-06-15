@@ -225,7 +225,7 @@ function displayToc(filter) {
       var tocNote = '<span class="toc-note">Menampilkan ' + postTitle.length + ' postingan<br/></span>'; }
    else {
       var tocNote = '<span class="toc-note">Menampilkan ' + numDisplayed + ' postingan kategori \'';
-      tocNote += postFilter + '\' of '+ postTitle.length + ' total postingan<br/></span>';
+      tocNote += postFilter + '\' dari '+ postTitle.length + ' total postingan<br/></span>';
    }
    tocdiv.innerHTML = tocNote + tocTable;
 } // end of displayToc
