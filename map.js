@@ -187,11 +187,11 @@ function displayToc(filter) {
    }
    if (sortBy == "dateoldest") { 
       tocTool1 += ' (ascending)';
-      tocTool2 += ' (newest first)';
+      tocTool2 += ' (paling baru)';
    }
    if (sortBy == "datenewest") { 
       tocTool1 += ' (ascending)';
-      tocTool2 += ' (oldest first)';
+      tocTool2 += ' (paling lama)';
    }
    if (postFilter != '') {
       tocTool3 = 'Klik untuk menampilkan semua postingan';
